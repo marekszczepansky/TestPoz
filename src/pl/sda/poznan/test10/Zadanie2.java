@@ -8,10 +8,10 @@ public class Zadanie2 {
         short s = 1000;
         System.out.println(s);
 
-        int i = 2147483647;
+        int i = 2_147_483_647;
         System.out.println(i);
 
-        long l = 822337203;
+        long l = 822_337_203;
         System.out.println(l);
 
         float f = 234.5f;
