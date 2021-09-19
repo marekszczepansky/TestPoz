@@ -7,8 +7,8 @@ package pl.sda.poznan.test10;
  */
 public class Zadanie3 {
     public static void main(String[] args) {
-        int i = 100000000000000000000000;
-        long l = -900000000000000000000000L;
+//        int i = 100000000000000000000000;
+//        long l = -900000000000000000000000L;
         double d = 100;
     }
 }
