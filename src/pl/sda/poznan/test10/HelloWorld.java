@@ -1,11 +1,23 @@
 package pl.sda.poznan.test10;
 
+
+import java.util.Scanner;
+
 @SuppressWarnings("ALL")
 public class HelloWorld {
     public static void main(String[] args) {
+        Scanner myScanner = new Scanner(System.in);
+
         System.out.println("\nHello world!");
-        int x = 5, y = 3;
+
+        int x, y;
         boolean a = true, b = false;
+
+        System.out.println("Podaj wartość x ");
+        x = myScanner.nextInt();
+        System.out.println("Podaj wartość y ");
+        y = myScanner.nextInt();
+
 
         System.out.println(!(a && b) + " = " + (!a || !b));
         System.out.println(!(a || b) + " = " + (!a && !b) );
