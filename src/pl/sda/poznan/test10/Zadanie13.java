@@ -26,12 +26,24 @@ import java.util.Random;
  * Minimum wynosi: 0
  */
 public class Zadanie13 {
+
+    public static final int RANGE = 10;
+
     public static void main(String[] args) {
         Random random = new Random();
-
-        int randomNumber = random.nextInt(20) - 10;
-
-
+        int tablica[] = new int[10];
+        for (int i = 0; i < tablica.length; i++) {
+            tablica[i] = random.nextInt(2 * RANGE) - RANGE;
+        }
+        int min = RANGE;
+        int max = -RANGE;
+        for (int element : tablica) {
+            System.out.println("Wartość z tablicy: " + element);
+            min = Integer.min(min, element);
+            max = Integer.max(max, element);
+        }
+        System.out.println("Maksimum wynosi: " + max);
+        System.out.println("Minimum wynosi: " + min);
     }
 
 }
