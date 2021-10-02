@@ -23,6 +23,8 @@ public class HelloWorld {
 
         String password = myScanner.nextLine();
 
+        "t e s t".replace(" ", "");
+
         boolean testSecret = "secret".equals(password);
         boolean testSecret2 = password != null && password.equals("secret");
 
@@ -61,6 +63,7 @@ public class HelloWorld {
         System.out.println("x<<3  = "  + displayBinary(x<<3));
         System.out.println("x>>3  = "  + displayBinary(x>>3));
         System.out.println("x>>>3 = "  + displayBinary(x>>>3));
+        System.out.printf("%d, %x", 123, 123);
 
     }
 
