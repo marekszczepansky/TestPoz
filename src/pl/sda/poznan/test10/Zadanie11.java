@@ -20,7 +20,7 @@ public class Zadanie11 {
         do {
             System.out.println("Podaj hasło");
             password = scanner.nextLine();
-            System.out.println(SECRET.equals(password) ? "Poprawne hasło" : password);
+            System.out.println(SECRET.equals(password) ? "Poprawne hasło" : password + "\nNiepoprawne hasło");
         } while (!SECRET.equals(password));
 
     }
